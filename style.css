@@ -1,0 +1,47 @@
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(/images/bg-intro-desktop.png);
+}
+
+.main-container {
+    height: 80vh;
+    width: 70vw;
+
+    display: grid;
+    grid-template: 2fr 8fr / repeat(2, 1fr);
+    gap: 5px;
+
+
+
+}
+
+.decription-heading {
+    grid-row: span 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.decription-heading > h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.decription-heading > p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subscription-button {}
+
+.application-form {}
