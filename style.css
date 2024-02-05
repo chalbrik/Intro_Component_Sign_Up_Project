@@ -154,7 +154,7 @@ p.comment{
     font-family: 'Poppins', sans-serif !important;
     font-weight: 400 !important;
     font-style: italic;
-    font-size: 10px;
+    font-size: 14px;
     color: hsl(0, 100%, 74%) !important;
     text-align: right;
     margin: 2px 0 0 0;
@@ -191,11 +191,12 @@ p.comment{
 
 .application-form p.terms {
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
     color: hsl(246, 25%, 77%);
     text-align: center;
     width: 85%;
+    margin: 0 0 20px 0;
 }
 
 .application-form p.terms>span.red-text {
