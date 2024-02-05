@@ -91,7 +91,16 @@ span.bold-text {
     border-color: hsl(246, 25%, 77%);
 }
 
-.application-form input {
+
+.application-form>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.application-form>div>input {
     height: 55px;
     width: 85%;
 
@@ -148,7 +157,7 @@ p.comment{
     font-size: 10px;
     color: hsl(0, 100%, 74%) !important;
     text-align: right;
-    margin: 0 0 15px 0;
+    margin: 2px 0 0 0;
 }
 
 .application-form button {
