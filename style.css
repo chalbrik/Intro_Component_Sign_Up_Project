@@ -8,15 +8,12 @@ html {
 }
 
 .main-container {
-    height: 70vh;
+    height: 75vh;
     width: 65vw;
 
     display: grid;
     grid-template: 0.5fr 9.5fr / repeat(2, 1fr);
     gap: 20px;
-
-
-
 }
 
 .decription-heading {
@@ -60,7 +57,17 @@ html {
     color: white;
     margin-bottom: 10px;
     box-shadow: 0px 10px 0px rgb(0, 0, 0, 0.15);
+    cursor: pointer;
 
+}
+
+.subscription-button>button:hover{
+
+    background-color: rgb(121, 110, 193);   
+}
+
+.subscription-button>button:focus{
+    background-color: rgb(121, 110, 193);   
 }
 
 span.bold-text {
@@ -78,7 +85,6 @@ span.bold-text {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 8px rgb(0, 0, 0, 0.18);
-
 
     height: 100%;
 
@@ -98,11 +104,50 @@ span.bold-text {
     border-radius: 5px;
 }
 
+
 .application-form input::placeholder {
 
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: rgb(62, 60, 73, 0.6);
+    color: rgb(62, 60, 73, 0.45);
+}
+
+.application-form input.has-value{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(62, 60, 73, 0.8);
+    border: 1px solid hsl(248, 32%, 49%) !important;
+    outline: none !important;
+}
+
+.application-form input.value-removed{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border: 2px solid hsl(0, 100%, 74%) !important;
+    color: hsl(0, 100%, 74%);
+    background-image: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px 20px;
+}
+
+.application-form input.value-removed:focus{
+    border: 2px solid hsl(0, 100%, 74%) !important;
+    outline: none;
+}
+
+.application-form input.value-removed::placeholder{
+    opacity: 0;
+}
+
+p.comment{
+    width: 85%;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    color: hsl(0, 100%, 74%) !important;
+    text-align: right;
+    margin: 0 0 15px 0;
 }
 
 .application-form button {
@@ -121,6 +166,17 @@ span.bold-text {
     text-transform: uppercase;
 
     box-shadow: 0px 4px 0px hsl(154, 56%, 45%);
+    cursor: pointer;
+}
+
+.application-form button:hover {
+    background-color: rgb(56, 204, 140, 0.8);
+    box-shadow: 0px 4px 0px rgb(50, 179, 123, 0.8);
+}
+
+.application-form button:focus {
+    background-color: rgb(56, 204, 140, 0.8);
+    box-shadow: 0px 4px 0px rgb(50, 179, 123, 0.8);
 }
 
 .application-form p {
@@ -128,13 +184,11 @@ span.bold-text {
     font-size: 10px;
     font-weight: 500;
     color: hsl(246, 25%, 77%);
-
-
+    text-align: center;
+    width: 85%;
 }
 
 .application-form p>span.red-text {
     color: red;
     font-weight: 700;
-
-
 }

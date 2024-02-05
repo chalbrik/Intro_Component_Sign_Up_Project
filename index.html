@@ -41,10 +41,15 @@
           </button>
         </div>
         <div class="application-form">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Email Address" />
-          <input type="text" placeholder="Password" />
+          <input id="first-name" autocomplete="off" type="text" placeholder="First Name" />
+          <p class="comment" id="first-name-comment" hidden>First Name cannot be empty</p>
+          <input id="last-name" autocomplete="off" type="text" placeholder="Last Name" />
+          <p class="comment" id="last-name-comment" hidden>Last Name cannot be empty</p>
+          <input id="email-address" autocomplete="off" type="text" placeholder="Email Address" />
+          <p class="comment" id="email-address-comment" hidden>Email cannot be empty</p>
+          <p class="comment" id="email-address-validation" hidden>Looks like this is not an email</p>
+          <input id="password" autocomplete="off" type="text" placeholder="Password" />
+          <p class="comment" id="password-comment" hidden>Password cannot be empty</p>
           <button>Claim your free trial</button>
           <p>
             By clicking the button, you are agreeing to our<span class="red-text"> Terms and Services</span>
@@ -54,5 +59,6 @@
     </main>
 
     <script src="index.js"></script>
+    
   </body>
 </html>
