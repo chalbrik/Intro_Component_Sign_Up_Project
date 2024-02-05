@@ -250,6 +250,10 @@ p.comment{
         border-color: hsl(246, 25%, 77%);
     }
 
+    .application-form>div>input {
+        height: 5vh;
+    }
+
     p.comment{
         font-size: 11px;
     }
