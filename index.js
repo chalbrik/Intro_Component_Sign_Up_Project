@@ -14,7 +14,7 @@ document.querySelectorAll("input").forEach((input) => {
 });
 
   document.querySelector("#email-address").addEventListener('blur', function(event) {
-    if (event) {
+    if (event && this.value != "") {
         const isEmailValid = checkEmailInput(this.value);
         if (!isEmailValid) {
             this.classList.add("value-removed");
